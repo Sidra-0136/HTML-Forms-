@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Form Challenge</title>
+</head>
+
+<body>
+  <h1>User Registration Form</h1>
+  <form>
+    <!--first and last name-->
+    <p>Firstname:
+      <input type="text" name="First Name" id="first name" required />
+    </p>
+    
+    <p>Lastname:
+      <input type="text" name="last name" id="last name" required />
+    </p>
+    
+    <!--password-->
+    <p>Password:
+      <input type="password" name="password" id="password" required />
+    </p>
+    
+    <!--Bio-->
+    <p>Bio:
+      <textarea name="Bio" id="bio" cols="40" rows="5"></textarea>
+    </p>
+    
+    <!--Gender-->
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="Male" name="Gender" value="Male" />
+      <label for="Male">Male</label>
+      <br />
+      <input type="radio" name="Gender" id="female" value="female" />
+      <label for="female">female</label>
+    </fieldset>
+    <br />
+    <!--Interests-->
+    <fieldset>
+      <legend>Interests</legend>
+      <input type="checkbox" name="interest" id="music" value="music" />
+      <label for="Music">Music</label><br />
+      <input type="checkbox" name="interest" id="Sports" value="sports" />
+      <label for="Sports">Sports</label><br />
+      <input type="checkbox" name="interest" id="reading" value="reading" />
+      <label for="Reading">Reading</label>
+    </fieldset>
+    
+    <!--Country-->
+    <p>Country:
+      <select name="country" id="country">
+        <option value="United States">United States</option>
+        <option value="Australia">Australia</option>
+        <option value="Canada">Canada</option>
+        <option value="Others">Others</option>
+      </select>
+    </p>
+    
+    <!--Preferred olors-->
+    <p>Preferred Colors:
+      <select name="Colors" id="Colors" multiple size="4">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Yellow">Yellow</option>
+      </select>
+    </p>
+    
+    <!--Profile pic-->
+    <p>Profile Picture:
+      <input type="file" name="profile pic" id="profile pic" />
+    </p>
+    
+    <!--Birthdate-->
+    <p>Birthdate:
+      <input type="date" name="birthdate" id="birthdate" />
+    </p>
+    
+    <!--Email-->
+    <p>Email:
+      <input type="email" name="email" id="email" required />
+    </p>
+    
+    <!--Website-->
+    <p>Website:
+      <input type="url" name="website" id="website" />
+    </p>
+    
+    <!--Search-->
+    <p>Search:
+      <input type="search" name="search" id="search" />
+    </p>
+    
+    <!--Submit Button-->
+    <input type="submit" value="submit" />
+  </form>
+  
+  
+  
+  
+</body>
+
+</html>
